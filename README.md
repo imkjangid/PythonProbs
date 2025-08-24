@@ -46,6 +46,6 @@ Each directory within the repository contains the Python script(s) for the corre
 Feel free to explore the code examples in this repository and use them for your own learning and practice purposes. You can clone the repository to your local machine and run the scripts using Python.
 
 ```bash
-git clone https://github.com/your-username/PythonProbs.git
+git clone https://github.com/imkjangid/PythonProbs.git
 cd PythonProbs
 python script_name.py
