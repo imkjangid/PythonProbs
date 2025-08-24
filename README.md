@@ -1,8 +1,6 @@
 # PythonProbs
 Just random python code.
 
-# Python Practice Codes
-
 This repository contains a collection of Python code examples that I have created for learners.
 
 ## About
