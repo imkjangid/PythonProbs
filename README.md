@@ -12,7 +12,7 @@ As a Python enthusiast, I have been continuously exploring the language, experim
 
 
 ## INDEX
-<table><thead><th>#</th><th colspan="2">Topic and Concepts</th><th>Updated</th></thead><tbody><tr><td>1</td><td>📁 Python Basics</td><td><ul><li>Comments and Docstring</li><li>Variables</li><li>User Input</li><li>Print Statement</li></ul></td><td>📅2025-08-26 🕜13:38:46</td></tr><tr><td></td><td><i>Writing content...</i></td><td></td><td>-</td></tr></tbody></table>
+<table><thead><th>#</th><th colspan="2">Topic and Concepts</th><th>Updated</th></thead><tbody><tr><td>1</td><td>📁 Python Basics</td><td><ul><li>Comments and Docstring</li><li>Variables</li><li>User Input</li><li>Print Statement</li></ul></td><td>📅2025-08-26</td></tr><tr><td></td><td><i>Writing content...</i></td><td></td><td>-</td></tr></tbody></table>
 
 Each directory within the repository contains the Python script(s) for the corresponding topic, along with a brief description of the code and its purpose.
 
