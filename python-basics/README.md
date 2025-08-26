@@ -1,10 +1,13 @@
-**Python Comments**
+<label title="Back to PythonProb">⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back</a></label>
+
+## **Python Comments**
 
 Comments are an essential part of writing code, as they help explain what a program is doing. They provide valuable context and documentation for the source code, making it easier for developers to understand the program's logic, even after some time has passed.
 
 In Python, you can add comments by using the hash (`#`) symbol. The comment will extend from the `#` symbol to the end of the line. Python's interpreter will ignore these comments and they are solely for the benefit of human readers.
 
 See: [*<code>comments.py</code>*](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/comments.py)
+
 ```python
 # This is a comment
 
@@ -15,7 +18,7 @@ See: [*<code>comments.py</code>*](https://github.com/imkjangid/PythonProbs/blob/
 
 Taking the time to add informative comments can greatly improve the maintainability and readability of your Python code. This is especially important when working on complex programs or collaborating with other developers.
 
-**Inline Comments**
+## **Inline Comments**
 
 Inline comments are comments that are placed directly on the same line as a statement. They begin with a single hash (#) sign, followed by a space, and then the comment.
 
@@ -25,7 +28,7 @@ For clarity, it's a good practice to separate the inline comment from the statem
 print("hello inline comment") # This is an inline comment
 ```
 
-**Docstrings in Python**
+## **Docstrings in Python**
 
 A docstring is short for documentation string.
 
