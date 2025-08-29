@@ -1,6 +1,9 @@
-<div title="Back to Home" style="float:left;padding:10px 0;"><label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a><label></div>
-<div style="float:right;padding:10px 0;">Navigation: <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label></div>
-<br>
+<div title="Back to Home" style="float:left;padding:10px 0;">
+    Navigation: 
+    <label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a></label>
+    <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label>
+    <label title="Showing Data Types">📂 <span style="border-bottom: #06d solid 3px;">Data Types</span></label>
+</div>
 <br>
 <br>
 
@@ -320,4 +323,53 @@ print(type(mydict))
 print("mydict[1] = ", mydict[1]); # try to find the element from key.
 
 print("mydict['key'] = ", mydict['key']);  # try to find the key from the element.
+```
+
+### Data Typecasting
+
+Type casting, or type conversion, is the process of changing the data type of a value. Python supports two types of conversion:
+
+#### Implicit Conversion
+- **Automatic**: Handled automatically by the interpreter.
+- **Purpose**: Prevents data loss during operations between compatible data types.
+- **Mechanism**: Python converts a lower-hierarchy data type to a higher-hierarchy one (e.g., `int` to `float`).
+
+See: [`implicit-typecasting-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/implicit-typecasting-1.py)
+```python
+# Implicit typecasting
+
+num_int = 10
+num_float = 5.5
+
+# Implicit conversion occurs here; num_int is converted to a float
+result = num_int + num_float
+
+print(result)
+print(type(result))  # Output: <class 'float'>
+```
+
+#### Explicit Conversion (Manual Casting)
+- **Manual process**: Performed by the programmer using built-in functions.
+- **Control**: Offers precise control over the conversion.
+- **Risk**: Can result in data loss (e.g., converting a float to an int truncates the decimal).
+- **Classes**: int(), float(), str(), list(), tuple(), set().
+
+See: [`explicit-typecasting-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/explicit-typecasting-2.py)
+```python
+# Explicit typecasting
+
+# float to int
+my_float = 9.81
+my_int = int(my_float)  # Truncates the decimal part
+print(my_int) # Output: 9
+
+# str to int
+my_str_num = "42"
+my_int_from_str = int(my_str_num)
+print(my_int_from_str + 1) # Output: 43
+
+# int to str
+my_int_val = 123
+my_str_val = str(my_int_val)
+print("The number is " + my_str_val) # Output: The number is 123
 ```

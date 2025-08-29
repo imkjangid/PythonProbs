@@ -1,4 +1,10 @@
-<label title="Back to PythonProb">⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back</a></label>
+<div title="Back to Home" style="float:left;padding:10px 0;">
+    Navigation: 
+    <label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a></label>
+    <label title="Showing Python Basics">📂 <span style="border-bottom: #06d solid 3px;">Python Basics</span></label>
+    <label title="Data Types">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/">Data Types</a><label></div>
+<br>
+<br>
 
 ## **Python Comments**
 
