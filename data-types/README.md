@@ -334,7 +334,7 @@ Type casting, or type conversion, is the process of changing the data type of a 
 - **Purpose**: Prevents data loss during operations between compatible data types.
 - **Mechanism**: Python converts a lower-hierarchy data type to a higher-hierarchy one (e.g., `int` to `float`).
 
-See: [`implicit-typecasting-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/implicit-typecasting-1.py)
+See: [`implicit-typecasting-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/implicit-typecasting.py)
 ```python
 # Implicit typecasting
 
@@ -354,7 +354,7 @@ print(type(result))  # Output: <class 'float'>
 - **Risk**: Can result in data loss (e.g., converting a float to an int truncates the decimal).
 - **Classes**: int(), float(), str(), list(), tuple(), set().
 
-See: [`explicit-typecasting-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/explicit-typecasting-2.py)
+See: [`explicit-typecasting-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/explicit-typecasting.py)
 ```python
 # Explicit typecasting
 
