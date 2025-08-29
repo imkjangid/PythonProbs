@@ -1,4 +1,8 @@
-<label title="Back to PythonProb">⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back</a></label>
+<div title="Back to Home" style="float:left;padding:10px 0;"><label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a><label></div>
+<div style="float:right;padding:10px 0;">Navigation: <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label></div>
+<br>
+<br>
+<br>
 
 # **Data Types**
 
@@ -14,6 +18,7 @@ Some of the most important types are listed below.
 ## Numbers
 Python's `numbers` category includes integers (`int`), floating-point numbers (`float`), and complex numbers (`complex`). To identify the specific class a variable or value belongs to, use the `type()` function. For checking if an object is an instance of a particular class or its subclasses, use the `isinstance()` function.
 
+See: [`numeric-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/numeric-1.py)
 ```python
 a = 5
 print(a, "is of type", type(a))
@@ -32,6 +37,7 @@ print(a, "is complex number?", isinstance(2+3j,complex))
 - **Floating-Point Numbers**: Accurate up to approximately `15 decimal places`. They are separated from integers by a decimal point (e.g., `1` is an `integer`, while `1.0` is a `float`).
 - **Complex Numbers**: Written in the form `x + yj`, where `x` is the real part and `yj` is the imaginary part.
 
+See: [`numeric-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/numeric-2.py)
 ```python
 a = 1234567890123456789
 print (a)
@@ -45,12 +51,52 @@ print (c)
 
 Notice that the value of the float variable `b` was truncated.
 
+## Boolean
+
+The boolean (`bool`) data type in Python represents logical values, which are limited to either True or False. As a cornerstone of conditional logic, booleans are the result of many comparison and logical operations, and are critical for controlling program flow.
+
+See: [`boolean-type.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/boolean-type.py)
+```python
+a = True
+b = False
+print(a and b)  # Output: False
+print(a or b)   # Output: True
+print(not a)    # Output: False
+```
+
+#### Truthy and Falsy Values
+In Python, every value has a "*truthiness*" that determines how it behaves in a boolean context, like an if statement.
+- **Falsy Values**: The following values are treated as False. You can confirm this with the bool() function.
+    - False, None
+    - The number zero (`0`, `0.0`, `0j`)
+    - Empty sequences (`""`, `[]`, `()`)
+    - Empty collections (`{}`, `set()`, `range(0)`)
+- **Truthy Values**: All other values are considered `True` in a boolean context.
+
+### NoneType
+
+The `NoneType` is the single data type for the special constant `None` in Python. `None` is an object that represents a null value or the absence of a value, often used as a sentinel to indicate that a variable has no assigned data or that an operation has not returned a result.
+
+#### Key Characteristics of the `None` Object
+- **Singleton**: There is only one `None` object in a Python program. When you assign `None` to different variables, they all point to this same object.
+- **Case-sensitive**: Always write `None` with a capital "`N`." Using lowercase `none` will cause an error.
+- **Distinct**: `None` is a unique value. It is not equivalent to `0`, an empty string (`""`), or `False`.
+
+See: [`none-type.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/none-type.py)
+
+```python
+none_object = None
+print(none_object) # Output: None
+print(type(none_object))  # Output: <class 'NoneType'>
+```
+
 ## Text (String)
 
 In Python, a string is an immutable sequence of Unicode characters. String literals can be expressed using single quotes, double quotes, or triple quotes.
 - **Single and Double Quotes**: Both are functionally equivalent for creating single-line strings.
 - **Triple Quotes (`'''` or `"""`)**: Used to define multi-line strings, which can span multiple lines and include newlines and other special characters.
 
+See: [`string-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/string-1.py)
 ```python
 mystring = '''Hello World 1'''
 print(mystring)
@@ -64,6 +110,7 @@ mystring = Hello World 5  # cannot write string without quotes ('', " ", """ """
 print(mystring)
 ```
 
+See: [`string-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/string-2.py)
 ```python
 mystring = "This is a string"  # mystring is my variable
 print(mystring)
@@ -74,6 +121,7 @@ print(multiline_string)
 
 The slicing operator (`[]`) can be used to extract items from strings, just as with lists and tuples. However, strings are immutable, meaning their elements cannot be changed after creation.
 
+See: [`string-slice.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/string-slice.py)
 ```python
 mystring = 'Hello world' # total 12 elements. Index start from '0' to '10'
 
@@ -86,10 +134,14 @@ print("mystring[6:10] = ", mystring[6:10])
 
 **NOTE**: Strings cannot be modified after they are created as string is `immutable`.
 
-## Python List
+## Collection
+A Python collection is a container data type that stores a group of objects. The language provides several built-in collection types—including lists, tuples, sets, and dictionaries—that are distinguished by their behavior regarding order, mutability, and element access.
+
+### Python List
 
 Lists in Python are `mutable`, ordered collections of items. As a highly flexible data structure, a single list can contain elements of varying data types. Lists are created by enclosing comma-separated values within square brackets (`[]`).
 
+See: [`list-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/list-1.py)
 ```python
 a = [2, 2.1, 'python']
 print(a)
@@ -97,6 +149,7 @@ print(a)
 
 You can extract a single item or a range of items from a list using the slicing operator (`[]`). Since Python uses zero-based indexing, the first item is at index `0`.
 
+See: [`list-index-slice.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/list-index-slice.py)
 ```python
 a = [5, 10, 15, 20, 25, 30, 35, 40]  # Total elemnets is 8
 #   [0   1   2   3   4   5   6   7]  ⬅ Index forward
@@ -126,21 +179,24 @@ print("a[5:] = ", a[5:])
 
 **NOTE**: Lists are `mutable`, which simply means you can change the items inside a list after you've made it.
 
-## Tuple
+### Tuple
 
 A tuple is an ordered, immutable sequence of items. Like lists, tuples can contain heterogeneous data and are created by enclosing a comma-separated sequence of items within parentheses (`()`). The key distinction is that once a tuple is created, its contents cannot be modified. Due to their static nature, tuples are often faster and are used for "write-protecting" data.
 
+See: [`tuple-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/tuple-1.py)
 ```python
 tp = (3,'hello', 3.1)
+print(tp)
 ```
 
-### *Tuples vs. Lists*
+#### *Tuples vs. Lists*
 - Tuples are like lists, but with one key difference: they are `immutable`, meaning you cannot change their contents after they are created.
 - This immutability makes tuples useful for data that should not be altered. It also makes them faster than lists for certain operations.
 
 
 While the slicing operator (`[]`) can be used to extract items from a tuple, it is not possible to alter their values, as tuples are immutable. See example below:
 
+See: [`tuple-index.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/tuple-index.py)
 ```python
 # Tuple 'tp' have 3 elements
 tp = (3,'hello', 3.1)
@@ -151,10 +207,10 @@ tp = (3,'hello', 3.1)
 # index '2' is elemtnt '3'= 3.1
 
 # tp[1] = 'hello'
-print("t[1] = ", t[1])
+print("tp[1] = ", tp[1])
 
 # tp[0:3] = (3, 'hello', 3.1)
-print("tp[0:3] = ", t[0:3])
+print("tp[0:3] = ", tp[0:3])
 
 # Generates error
 # Tuples are immutable
@@ -176,6 +232,7 @@ TypeError: 'tuple' object does not support item assignment
 
 Try the following code:
 
+See: [`tuple-vs-list.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/tuple-vs-list.py)
 ```python
 mylist =  [3, 'hello', 2.1]  # list
 mytuple = (3, 'hello', 2.1)  # tuple
@@ -185,4 +242,82 @@ print(mylist)         # No error here
 
 mytuple[1]= 'python'  # Tuple is immutable
 print(mytuple)        # error will be raised as show in previous example
+```
+
+### Sets
+
+A set is an unordered and mutable collection of unique, hashable items. Sets are defined by enclosing a comma-separated sequence of values within curly braces (`{}`). Because they are unordered, items within a set cannot be accessed by index.
+
+See: [`set-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/set-1.py)
+```python
+myset = {6,4,7,8,4}
+
+# printing set variable
+print("myset = ", myset)
+
+# data type of variable myset
+print(type(myset))
+```
+
+Due to their unordered nature, sets do *not support `indexing`*, and therefore, the slicing operator (`[]`) is not applicable.
+
+See: [`set-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/set-2.py)
+```python
+myset = {1,2,3}  # Elements in a set cannot be accessed by index because a set is an unordered collection.
+myset[1]  # it will raise an error
+```
+
+<pre>
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-1-234b76ef2a87> in <module>
+      1 a = {1,2,3}  # Elements in a set cannot be accessed by index because a set is an unordered collection.
+----> 2 a[1]  # it will raise an error
+
+TypeError: 'set' object is not subscriptable
+</pre>
+
+Sets allow you to perform common mathematical operations like `union` and `intersection`. A key characteristic of sets is that they only contain unique elements, which automatically eliminates duplicates.
+
+See: [`set-3.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/set-3.py)
+```python
+set_a = {1, 2, 3, 4, 5}
+set_b = {4, 5, 6, 7, 8}
+
+print(f"Set A: {set_a}")
+print(f"Set B: {set_b}")
+
+# Using the union() method
+union_set_method = set_a.union(set_b)
+print(f"Union (method): {union_set_method}")
+
+# Using the intersection() method
+intersection_set_method = set_a.intersection(set_b)
+print(f"Intersection (method): {intersection_set_method}")
+```
+
+### Dictionary
+
+A dictionary is a mutable collection of key-value pairs, where each key maps to a corresponding value. Dictionaries are optimized for efficient data retrieval when the key is known, making them suitable for handling large datasets. In Python, dictionaries are defined by enclosing comma-separated *`key:value`* pairs within curly braces (`{}`), where both keys and values can be of any type.
+
+See: [`dictionary-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/dictionary-1.py)
+```python
+mydict = {1: 'One', 2: 'Two', 3: 'Three'}  # 'One' is a value while 1 is the key of an element.
+print(mydict, type(mydict))
+
+print(mydict[3])
+```
+
+Accessing Dictionary Values
+- **Use the key**: To get a value from a dictionary, you must provide its associated key.
+- **One-way lookup**: You cannot use a value to find its key. This makes the lookup process very fast.
+
+See: [`dictionary-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/dictionary-2.py)
+```python
+mydict = {1:'value','key':2} # '1' is the key to access 'value' and 'key' is the key to access '2'
+print(type(mydict))
+
+print("mydict[1] = ", mydict[1]); # try to find the element from key.
+
+print("mydict['key'] = ", mydict['key']);  # try to find the key from the element.
 ```
