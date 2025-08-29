@@ -7,10 +7,10 @@ tp = (3,'hello', 3.1)
 # index '2' is elemtnt '3'= 3.1
 
 # tp[1] = 'hello'
-print("t[1] = ", t[1])
+print("t[1] = ", tp[1])
 
 # tp[0:3] = (3, 'hello', 3.1)
-print("tp[0:3] = ", t[0:3])
+print("tp[0:3] = ", tp[0:3])
 
 # Generates error
 # Tuples are immutable
