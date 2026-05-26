@@ -16,7 +16,7 @@ Key aspects of Python data types:
 
 Some of the most important types are listed below.
 
-<table border="1"><thead><th>Data Type</th><th colspan="2">Class Name</th><th>Mutablility</th></thead><tbody align="center"><tr><th rowspan="4">Numbers</th><td><tr><td>Integer</td><td>int</td><td>❌</td></tr><tr><td>Flaot</td><td>flaot</td><td>❌</td></tr><tr><td>Complex</td><td>complex</td><td>❌</td></tr></td></tr><tr><th rowspan="2">Texts</th><tr><td>String</td><td>str</td><td>❌</td></tr></tr><tr><th rowspan="2">Booleans</th><tr><td>Boolean</td><td>bool</td><td>❌</td></tr></tr><tr><th rowspan="2">NoneType</th><tr><td>None</td><td>NoneType</td><td>❌</td></tr></tr><tr><th rowspan="5">Collection</th><tr><td>List</td><td>list</td><td>✅</td></tr><tr><td>Tuple</td><td>tuple</td><td>❌</td></tr><tr><td>Dictionary</td><td>dict</td><td>✅</td></tr><tr><td>Set</td><td>set</td><td>✅</td></tr></tr></tbody></table>
+<table border=1><thead><th>Data Type<th colspan=2>Class Name<th>Mutablility<th>Category<th>Hashable<th>Core Use Case<tbody align=center><tr><th rowspan=4>Numbers<td><tr><td>Integer<td>int<td>❌<td>Numeric<td>✅<td rowspan=2>Mathematical computations & counters.<tr><td>Flaot<td>flaot<td>❌<td>Numeric<td>✅<tr><td>Complex<td>complex<td>❌<td>Numeric<td>✅<td>2D coordinate geometry, physics simulation, electrical engineering math.<tr><th rowspan=2>Texts<tr><td>String<td>str<td>❌<td>Sequence<td>✅<td>Text representation & string manipulation.<tr><th rowspan=2>Booleans<tr><td>Boolean<td>bool<td>❌<td>Numeric (0, 1)<td>✅<td>Conditional branching, flags, and logic evaluation gateways.<tr><th rowspan=2>NoneType<tr><td>None<td>NoneType<td>❌<td>Singleton<td>✅<td>Placeholder for missing data, default function returns, and state resets.<tr><th rowspan=6>Collection<tr><td>List<td>list<td>✅<td>Sequence<td>❌<td>Ordered collections where items change frequently.<tr><td>Tuple<td>tuple<td>❌<td>Sequence<td>✅<td>Fixed, read-only ordered structures (Data integrity).<tr><td>Dictionary<td>dict<td>✅<td>Mapping<td>❌<td>Fast key-value lookups (<i>O</i>(1) complexity).<tr><td>Set<td>set<td>✅<td>Set Types<td>❌<td>Unordered unique elements, mathematical set math.<tr><td>Frozen Set<td>frozenset<td>❌<td>Set Types<td>❌<td>Immutable unique collection; usable as dict keys/nested sets.</table>
 
 ## Numbers
 Python's `numbers` category includes integers (`int`), floating-point numbers (`float`), and complex numbers (`complex`). To identify the specific class a variable or value belongs to, use the `type()` function. For checking if an object is an instance of a particular class or its subclasses, use the `isinstance()` function.
@@ -24,16 +24,16 @@ Python's `numbers` category includes integers (`int`), floating-point numbers (`
 See: [`numeric-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/numeric-1.py)
 ```python
 a = 5
-print(a, "is of type", type(a))
-print(a, "is integer number?", isinstance(5,int))
+print(a, "is of type", type(a)) # Output: <class 'int'>
+print(a, "is integer number?", isinstance(5,int)) # Output: True
 
 a = 2.0
-print(a, "is of type", type(a))
-print(a, "is float number?", isinstance(2.0,float))
+print(a, "is of type", type(a)) # Output: <class 'float'>
+print(a, "is float number?", isinstance(2.0,float)) # Output: True
 
 a = 2+3j  # '2' is real part and '3j' is imaginary part
-print(a, "is of type", type(a))
-print(a, "is complex number?", isinstance(2+3j,complex))
+print(a, "is of type", type(a)) # Output: <class 'complex'>
+print(a, "is complex number?", isinstance(2+3j,complex)) # Output: True
 ```
 
 - **Integers**: Can be of any length and are only limited by available memory.
@@ -43,13 +43,13 @@ print(a, "is complex number?", isinstance(2+3j,complex))
 See: [`numeric-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/numeric-2.py)
 ```python
 a = 1234567890123456789
-print (a)
+print (a) # Output: 1234567890123456789
 
 b = 0.1234567890123456789  # total of only 17 numbers after decimal can be printed.
-print (b)
+print (b) # Output: 0.12345678901234568
 
 c = 1+2j
-print (c)
+print (c) # Output: (1+2j)
 ```
 
 Notice that the value of the float variable `b` was truncated.
@@ -102,15 +102,15 @@ In Python, a string is an immutable sequence of Unicode characters. String liter
 See: [`string-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/string-1.py)
 ```python
 mystring = '''Hello World 1'''
-print(mystring)
+print(mystring) # Output: Hello World 1
 mystring = """Hello World 2"""
-print(mystring)
+print(mystring) # Output: Hello World 2
 mystring = 'Hello World 3'
-print(mystring)
+print(mystring) # Output: Hello World 3
 mystring = "Hello World 4"
-print(mystring)
+print(mystring) # Output: Hello World 4
 mystring = Hello World 5  # cannot write string without quotes ('', " ", """ """, ''' ''')
-print(mystring)
+print(mystring) # Output: NameError: name 'Hello World 5' is not defined
 ```
 
 See: [`string-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/string-2.py)
@@ -129,10 +129,10 @@ See: [`string-slice.py`](https://github.com/imkjangid/PythonProbs/blob/main/data
 mystring = 'Hello world' # total 12 elements. Index start from '0' to '10'
 
 # mystring[4] = 'o'
-print("mystring[4] = ", mystring[4])
+print("mystring[4] = ", mystring[4]) # Output: 'o'
 
 # mystring[6:10] = 'world' # index '6' to '10' means element from 6 to 10
-print("mystring[6:10] = ", mystring[6:10])
+print("mystring[6:10] = ", mystring[6:10]) # Output: 'world'
 ```
 
 **NOTE**: Strings cannot be modified after they are created as string is `immutable`.
@@ -169,15 +169,13 @@ a = [5, 10, 15, 20, 25, 30, 35, 40]  # Total elemnets is 8
 a[1] # To access the elements in the list
 
 # a[2] = 15
-print("a[2] = ", a[2])
+print("a[2] = ", a[2]) # Output: 15
 
 # a[0:3] = [5, 10, 15]
-print("a[0:3] = ", a[0:3])  # [0:3] means elements from 0 uptil 2 index (not include last element)
-                            # [0:3] means from index 0 to 3 - 1
-                            # [0:3] means from index 0 to 2
+print("a[0:3] = ", a[0:3])  # Output: [5, 10, 15]
 
 # a[5:] = [30, 35, 40]  # [5:] means all the elements from 5 till end
-print("a[5:] = ", a[5:])
+print("a[5:] = ", a[5:]) # Output: [30, 35, 40]
 ```
 
 **NOTE**: Lists are `mutable`, which simply means you can change the items inside a list after you've made it.
@@ -189,7 +187,7 @@ A tuple is an ordered, immutable sequence of items. Like lists, tuples can conta
 See: [`tuple-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/tuple-1.py)
 ```python
 tp = (3,'hello', 3.1)
-print(tp)
+print(tp) # Output: (3, 'hello', 3.1)
 ```
 
 #### *Tuples vs. Lists*
@@ -210,14 +208,14 @@ tp = (3,'hello', 3.1)
 # index '2' is elemtnt '3'= 3.1
 
 # tp[1] = 'hello'
-print("tp[1] = ", tp[1])
+print("tp[1] = ", tp[1]) # Output: hello
 
 # tp[0:3] = (3, 'hello', 3.1)
-print("tp[0:3] = ", tp[0:3])
+print("tp[0:3] = ", tp[0:3]) # Output: (3, 'hello', 3.1)
 
 # Generates error
 # Tuples are immutable
-tp[0] = 6  # trying to change element 0 from '3' to '6'
+tp[0] = 6  # Output: TypeError: 'tuple' object does not support item assignment
 ```
 
 As the result of above code
@@ -241,25 +239,25 @@ mylist =  [3, 'hello', 2.1]  # list
 mytuple = (3, 'hello', 2.1)  # tuple
 
 mylist[1] = 'python'  # List is mutable
-print(mylist)         # No error here
+print(mylist)         # Output: [3, 'python', 2.1]
 
 mytuple[1]= 'python'  # Tuple is immutable
-print(mytuple)        # error will be raised as show in previous example
+print(mytuple)        # Output: TypeError: 'tuple' object does not support item assignment
 ```
 
 ### Sets
 
-A set is an unordered and mutable collection of unique, hashable items. Sets are defined by enclosing a comma-separated sequence of values within curly braces (`{}`). Because they are unordered, items within a set cannot be accessed by index.
+A set is an unordered and mutable collection of unique, hashable items. Sets are defined by enclosing a comma-separated sequence of values within curly braces (`{}`). Because they are unordered, items within a set cannot be accessed by index and duplicates items removed automatically
 
 See: [`set-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/set-1.py)
 ```python
 myset = {6,4,7,8,4}
 
 # printing set variable
-print("myset = ", myset)
+print("myset = ", myset) # Output: {4, 6, 7, 8}
 
 # data type of variable myset
-print(type(myset))
+print(type(myset)) # Output: <class 'set'>
 ```
 
 Due to their unordered nature, sets do *not support `indexing`*, and therefore, the slicing operator (`[]`) is not applicable.
@@ -299,6 +297,55 @@ intersection_set_method = set_a.intersection(set_b)
 print(f"Intersection (method): {intersection_set_method}")
 ```
 
+### Frozen Sets
+
+A *`frozenset`* is a built-in data type in Python that represents an immutable version of a standard set defined by *`frozenset([ele1, ele2])`*. While elements in a regular set can be added or removed at runtime , a frozenset cannot be modified after it is created.
+
+See: [`frozenset-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/frozenset-1.py)
+1. Initialization & Type Checking
+```python
+# Creating a frozen set from a list
+fs1 = frozenset([10, 20, 30, 40, 20]) # Duplicates (20) are automatically removed
+print("Frozen Set 1:", fs1)           # Output: frozenset({40, 10, 20, 30})
+print("Data Type:", type(fs1))        # Output: <class 'frozenset'>
+
+# Creating a frozen set from a string
+fs_str = frozenset("kapil")
+print("Frozen Set from String:", fs_str) # Output: Unique unordered characters
+
+# Creating an empty frozen set
+empty_fs = frozenset()
+print("Empty Frozen Set:", empty_fs)   # Output: frozenset()
+```
+
+2. Immutability Demonstration (Read-Only)
+```python
+sample_fs = frozenset([1, 2, 3])
+# Frozen sets DO NOT have methods like .add(), .remove(), or .pop()
+sample_fs.add(4) # Will raise AttributeError: 'frozenset' object has no attribute 'add'
+
+sample_fs.clear() # Will raise AttributeError: 'frozenset' object has no attribute 'clear'
+```
+3. Membership Testing
+```python
+tech_stack = frozenset(["Python", "Django", "Flask"])
+
+# Checking if an item exists inside the frozen set (O(1) Complexity)
+print("\nIs Python present?:", "Python" in tech_stack)   # Output: True
+print("Is Salesforce present?:", "Salesforce" in tech_stack) # Output: False
+```
+
+4. Primary Mathematical Mathematic (Non-mutating)
+```python
+set_a = frozenset([1, 2, 3])
+set_b = frozenset([3, 4, 5])
+
+# Operations always return a BRAND NEW frozenset object
+print("\nUnion (A ∪ B):", set_a.union(set_b))                 # Output: frozenset({1, 2, 3, 4, 5})
+print("Intersection (A ∩ B):", set_a.intersection(set_b))     # Output: frozenset({3})
+print("Difference (A - B):", set_a.difference(set_b))         # Output: frozenset({1, 2})
+```
+
 ### Dictionary
 
 A dictionary is a mutable collection of key-value pairs, where each key maps to a corresponding value. Dictionaries are optimized for efficient data retrieval when the key is known, making them suitable for handling large datasets. In Python, dictionaries are defined by enclosing comma-separated *`key:value`* pairs within curly braces (`{}`), where both keys and values can be of any type.
@@ -308,7 +355,7 @@ See: [`dictionary-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/data
 mydict = {1: 'One', 2: 'Two', 3: 'Three'}  # 'One' is a value while 1 is the key of an element.
 print(mydict, type(mydict))
 
-print(mydict[3])
+print(mydict[3]) # Output: Three
 ```
 
 Accessing Dictionary Values
@@ -320,9 +367,9 @@ See: [`dictionary-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data
 mydict = {1:'value','key':2} # '1' is the key to access 'value' and 'key' is the key to access '2'
 print(type(mydict))
 
-print("mydict[1] = ", mydict[1]); # try to find the element from key.
+print("mydict[1] = ", mydict[1]); # Output: value
 
-print("mydict['key'] = ", mydict['key']);  # try to find the key from the element.
+print("mydict['key'] = ", mydict['key']);  # Output: 2
 ```
 
 ### Data Typecasting
