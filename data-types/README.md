@@ -318,6 +318,7 @@ empty_fs = frozenset()
 print("Empty Frozen Set:", empty_fs)   # Output: frozenset()
 ```
 
+See: [`frozenset-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/frozenset-2.py)
 2. Immutability Demonstration (Read-Only)
 ```python
 sample_fs = frozenset([1, 2, 3])
@@ -326,6 +327,7 @@ sample_fs.add(4) # Will raise AttributeError: 'frozenset' object has no attribut
 
 sample_fs.clear() # Will raise AttributeError: 'frozenset' object has no attribute 'clear'
 ```
+See: [`frozenset-3.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/frozenset-3.py)
 3. Membership Testing
 ```python
 tech_stack = frozenset(["Python", "Django", "Flask"])
@@ -335,6 +337,7 @@ print("\nIs Python present?:", "Python" in tech_stack)   # Output: True
 print("Is Salesforce present?:", "Salesforce" in tech_stack) # Output: False
 ```
 
+See: [`frozenset-4.py`](https://github.com/imkjangid/PythonProbs/blob/main/data-types/frozenset-4.py)
 4. Primary Mathematical Mathematic (Non-mutating)
 ```python
 set_a = frozenset([1, 2, 3])
