@@ -2,7 +2,7 @@
     Navigation: 
     <label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a></label>
     <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label>
-    <label title="Showing Data Types">📂 <span style="border-bottom: #06d solid 3px;">Data Types</span>/<label title="Data Types Methods"><a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/built-in-methods">Built-in Methods</a><label></label>
+    <label title="Showing Data Types">📂 <span style="border-bottom: #06d solid 3px;">Data Types</span>/<label title="Data Types Methods"><a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/data-type-built-in-methods">Built-in Methods</a><label></label>
 </div>
 <br>
 <br>
