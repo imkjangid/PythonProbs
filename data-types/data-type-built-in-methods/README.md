@@ -2,7 +2,9 @@
     Navigation: 
     <label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a></label>
     <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label>
-    <label title="Data Types">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/built-in-methods">Data Types</a>/<label title="Showing Data Types Methods"><span style="border-bottom: #06d solid 3px;">Built-in Methods<span><label></label>
+    <label title="Data Types">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/built-in-methods">Data Types</a>/<label title="Showing Data Types Methods"><span style="border-bottom: #06d solid 3px;">Built-in Methods</span><label></label>
+    <label title="Operators">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/operators/">Operators</a></label>
+    <label title="Control Flow">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/control-flow/">Control Flow</a></label></div>
 </div>
 <br>
 <br>
