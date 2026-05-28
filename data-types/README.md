@@ -5,6 +5,7 @@
     <label title="Showing Data Types">📂 <span style="border-bottom: #06d solid 3px;">Data Types</span>/<label title="Data Types Methods"><a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/data-type-built-in-methods">Built-in Methods</a><label></label>
     <label title="Operators">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/operators/">Operators</a></label>
     <label title="Control Flow">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/control-flow/">Control Flow</a></label>
+    <label title="Showing Functions">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/functions/">Functions</a></label>
 </div>
 <br>
 <br>
