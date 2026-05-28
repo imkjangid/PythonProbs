@@ -4,6 +4,7 @@
     <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label>
     <label title="Data Types">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/">Data Types</a><label>
     <label title="Showing Operators">📂 <span style="border-bottom: #06d solid 3px;">Operators</span></label>
+    <label title="Control Flow">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/control-flow/">Control Flow</a></label>
 </div>
 <br>
 <br>

@@ -1,3 +1,14 @@
+<div title="Back to Home" style="float:left;padding:10px 0;">
+    Navigation: 
+    <label>⬅️ <a href="https://github.com/imkjangid/PythonProbs">Back to Home</a></label>
+    <label title="Python Basics">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/python-basics/">Python Basics</a><label>
+    <label title="Data Types">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/">Data Types</a><label>
+    <label title="Operators">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/operators/">Operators</a></label>
+    <label title="Showing Control Flow">📂 <span style="border-bottom: #06d solid 3px;">Control Flow</span></label>
+</div>
+<br>
+<br>
+
 # Control Flow
 
 ## 1. Basic Examples & Primary Syntax
