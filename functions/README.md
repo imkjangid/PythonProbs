@@ -17,7 +17,7 @@
 Python provides a vast library of pre-defined Built-in Functions (like `print()`, `len()`, `max()`, and `type()`) to perform immediate tasks. For custom workflows, you can define your own blocks of code using the `def` keyword. A function only executes when it is explicitly invoked via a Function Call.
 
 #### i. Built-in Functions
-See: [`built-in-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/built-in-function.py)
+See: [`built-in-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/built-in-function.py)
 
 ```python
 # ==========================================
@@ -38,7 +38,7 @@ print("Welcome ", name) # Output: Welcome Kapil
 #### ii. Custom Functions: Defining and Calling a Function
 To create a custom function, we use the def keyword, followed by the function name and parentheses `()`. A function only runs when you explicitly call it.
 
-See: [`custom-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/custom-function.py)
+See: [`custom-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/custom-function.py)
 
 
 ```python
@@ -63,7 +63,7 @@ generate_welcome_message() # Output: Welcome back, Kapil! | Connected to: Codweb
 
 #### iii. Returning Functions with `return` Keyword
 
-See: [`return-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/return-function.py)
+See: [`return-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/return-function.py)
 
 
 ```python
@@ -89,7 +89,7 @@ When you access a variable inside a function, Python resolves its reference usin
 - **Global (G)**: Variables declared at the topmost level of the script module.
 - **Built-in (B)**: Standard pre-loaded keywords (like `open`, `range`, `ValueError`).
 
-See: [`scope-resolution-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/scope-resolution-1.py)
+See: [`scope-resolution-1.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/scope-resolution-1.py)
 
 ```python
 # Real-World Example: Classroom vs. School Bag
@@ -107,7 +107,7 @@ classroom_one()
 print("student bag (Local):", student_bag) # Output: NameError: name 'student_bag' is not defined
 ```
 
-See: [`scope-resolution-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/scope-resolution-2.py)
+See: [`scope-resolution-2.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/scope-resolution-2.py)
 
 ```python
 # Real-World Example: Server Configuration Control Scopes
@@ -130,7 +130,7 @@ network_gateway_outer() # Function calling pipeline
 ### Modifying Scopes: `global` vs. `nonlocal`
 By default, functions can read outer variables but cannot modify them. Attempting to reassign an outer variable creates a new local variable instead. To explicitly modify global or enclosing variables, you must declare them using the `global` or `nonlocal` keywords.
 
-See: [`modifying-scopes.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/modifying-scopes.py)
+See: [`modifying-scopes.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/modifying-scopes.py)
 
 ```python
 score = 0 # Global
@@ -158,7 +158,7 @@ print("Updated Global Score:", score) # Output: 100
 
 - **Arguments**: These are the actual values or data coordinates you pass into the function when you invoke or call it.
 
-See: [`standard-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/standard-arguments.py)
+See: [`standard-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/standard-arguments.py)
 
 ```python
 def greet_user(username):  # 'username' is a PARAMETER
@@ -172,7 +172,7 @@ Before handling dynamic lengths, you must master how standard data variables are
 #### i. Positional Arguments (Order Matters)
 This is the most basic setup. Arguments are mapped to parameters based strictly on the sequence or position in which they are written.
 
-See: [`positional-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/positional-arguments.py)
+See: [`positional-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/positional-arguments.py)
 
 
 ```python
@@ -190,7 +190,7 @@ order_phone("iPhone 15", "Apple")  # Output: Order Confirmed: iPhone 15 Apple
 #### ii. Keyword Arguments (Name Matters, Order Doesn't)
 If you do not want to worry about maintaining a strict structural sequence, you can explicitly state the parameter names during the function call using a `key=value` format.
 
-See: [`keyword-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/keyword-arguments.py)
+See: [`keyword-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/keyword-arguments.py)
 
 
 ```python
@@ -205,7 +205,7 @@ order_phone(model="Galaxy S24", brand="Samsung")
 #### iii. Default Arguments (The Backup Plan)
 Sometimes you want a parameter to have a fallback option so that the code does not crash if a user misses an input. You assign these baseline values using the = operator within the function definition.
 
-See: [`default-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/default-arguments.py)
+See: [`default-arguments.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/default-arguments.py)
 
 
 ```python
@@ -234,7 +234,7 @@ In Python, when you don't know in advance how many inputs a user will pass to yo
 #### `*args` (The Unnamed Packing Engine)
 The asterisk `*` is the magic symbol. It tells Python to pack all the remaining loose inputs into a single ordered Tuple container.
 
-See: [`args-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/args-function.py)
+See: [`args-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/args-function.py)
 
 ```python
 # ==========================================
@@ -256,7 +256,7 @@ print(calculate_total_items("Laptop", "Mouse", "Bag", "Mic")) # Passing 4 inputs
 #### `**kwargs` (The Named/Labeled Packing Engine)
 The double asterisk `**` tells Python to grab all the named inputs (`key=value` pairs) and pack them nicely into a searchable Dictionary container.
 
-See: [`kwargs-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/kwargs-function.py)
+See: [`kwargs-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/kwargs-function.py)
 
 ```python
 # ==========================================
@@ -316,7 +316,7 @@ When you are mixing normal parameters, `*args`, and `**kwargs` together inside a
     </tbody>
 </table>
 
-See: [`unified-order.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/unified-order.py)
+See: [`unified-order.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/unified-order.py)
 
 ```python
 # Complete Unified Order Example
@@ -334,7 +334,7 @@ master_factory(101, "Extra1", "Extra2", status="Active", location="India", score
 - **Recursion**: A behavioral programming pattern where a function calls itself to break down complex mathematical calculations into smaller sub-problems. Every recursive function must contain a Base Case to prevent infinite execution stacks.
 - **Memoization**: An optimization technique used to accelerate slow recursive processes by caching the results of expensive function calls inside an internal look-up storage table. If the same inputs occur again, Python fetches the answer directly from the cache ($O(1)$ lookup) instead of recalculating it.
 
-See: [`recursion-memoization.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/recursion-memoization.py)
+See: [`recursion-memoization.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/recursion-memoization.py)
 
 
 ```python
@@ -360,7 +360,7 @@ count_down(3)
 ### A. Lambda Functions (Anonymous Expressions)
 A Lambda Function is a compact, single-line anonymous function defined without a name using the `lambda` keyword. It can take any number of arguments but can only execute a single expression.
 
-See: [`lambda-function.py`](https://github.com/imkjangid/PythonProb/blob/main/python-basics/functions/lambda-function.py)
+See: [`lambda-function.py`](https://github.com/imkjangid/PythonProb/blob/main/functions/lambda-function.py)
 
 
 ```python
@@ -383,7 +383,7 @@ print(clean_input("   ARCHITECTNK.COM   ")) # Output: architectnk.com
 - **`filter(function, iterable)`**: Tests every item in an iterable against a boolean condition. It extracts only the items that evaluate to `True`.
 - **`reduce(function, iterable)`**: Part of the `functools` module. It applies a rolling calculation across the elements of a sequence sequentially from left to right, reducing the entire array down to a single cumulative scalar value.
 
-See: [`functional-pipeline.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/functional-pipeline.py)
+See: [`functional-pipeline.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/functional-pipeline.py)
 
 
 ```python
@@ -409,7 +409,7 @@ Understanding how functional pipelines generate objects in memory is a critical 
 - **Eager Execution**: Standard collections (like List Comprehensions or basic arrays) calculate all data elements immediately and load the entire payload directly into RAM. This can lead to heavy memory consumption if you are working with millions of entries.
 - **Lazy Execution**: Functional streams (like `map()` and `filter()`) use lazy evaluation. They do not calculate anything upon creation; instead, they return a lightweight generator placeholder pointer. Data elements are computed and yielded one-at-a-time only when you explicitly iterate over them or cast them to a list.
 
-See: [`eager-lazy-execution.py`](https://github.com/imkjangid/PythonProbs/blob/main/python-basics/functions/eager-lazy-execution.py)
+See: [`eager-lazy-execution.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/eager-lazy-execution.py)
 
 
 ```python
