@@ -17,7 +17,7 @@
 Python provides a vast library of pre-defined Built-in Functions (like `print()`, `len()`, `max()`, and `type()`) to perform immediate tasks. For custom workflows, you can define your own blocks of code using the `def` keyword. A function only executes when it is explicitly invoked via a Function Call.
 
 #### i. Built-in Functions
-See: [`built-in-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/built-in-function.py)
+See: [`built-in-functions.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/built-in-function.py)
 
 ```python
 # ==========================================
@@ -360,7 +360,7 @@ count_down(3)
 ### A. Lambda Functions (Anonymous Expressions)
 A Lambda Function is a compact, single-line anonymous function defined without a name using the `lambda` keyword. It can take any number of arguments but can only execute a single expression.
 
-See: [`lambda-function.py`](https://github.com/imkjangid/PythonProb/blob/main/functions/lambda-function.py)
+See: [`lambda-function.py`](https://github.com/imkjangid/PythonProbs/blob/main/functions/lambda-function.py)
 
 
 ```python
