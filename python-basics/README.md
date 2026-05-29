@@ -4,7 +4,8 @@
     <label title="Showing Python Basics">📂 <span style="border-bottom: #06d solid 3px;">Python Basics</span></label>
     <label title="Data Types">📁 <a href="https://github.com/imkjangid/PythonProbs/tree/main/data-types/">Data Types</a><label><label title="Operators">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/operators/">Operators</a></label>
     <label title="Control Flow">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/control-flow/">Control Flow</a></label>
-    <label title="Showing Functions">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/functions/">Functions</a></label>
+    <label title="Functions">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/functions/">Functions</a></label>
+    <label title="Closures & Decorators">📂 <a href="https://github.com/imkjangid/PythonProbs/tree/main/closure_decorator/">Closures & Decorators</a></label>
 </div>
 <br>
 <br>
